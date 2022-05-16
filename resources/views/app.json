@@ -1,0 +1,229 @@
+{
+	"version"           : "4.3.7",
+	"subVersion"        : "1.0.0",
+	"date"              : "300114",
+	"kwTopicPub"        : "app/resize",
+	"kwTopicPubReady"	: "app/ready",
+	"kwTopicSubReady"   : "text/ready",
+	"filter"            : "gnFilterNone",
+    "hist"       :
+    {
+
+    },
+	"persist"	:
+	{
+		"kwTopicSub"        : "persist/modify",
+        "kwTopicSubReady"   : "app/ready",
+        "kwTopicPubReady"   : "persist/ready",
+		"kwSeparator"         : "!",
+		"breadCrumbs"       :
+		{
+		},
+		"cookie"	:
+		{
+			"kwTopicSub"	: "view/modified",
+			"kwExpires"		: 200
+		},
+        "items" :
+        {
+            "kwTopicPub"    : "persist/modify",
+            "kwTopicSub"    : "todolist/modified"
+        },
+        "filter" :
+        {
+            "kwTopicPub"    : "persist/modify",
+            "kwTopicSub"    : "filter/modified"
+        }
+	},
+	"state"	:
+	{
+        "filter" :
+        {
+			"kwTopicPub"	: "filter/modified"
+        },
+		"items"	:
+		{
+			"kwHasMultiple" : true,
+			"kwSeparator"	: "|",
+			"kwIDNumeric"	: 0,
+			"kwTopicPub"	: "todolist/modified",
+			"item"	:
+			{
+			}
+		}
+	},
+	"text"	:
+	{
+		"fileLang"          : "resources/lang/text",
+		"kwTopicPubReady"	: "text/ready"
+	},
+	"resize"	:
+	{
+		"kwTopicSub"	: "app/resize"
+	},
+	"learn"	:
+	{
+		"kwClass"	: "learn",
+		"header"	:
+		{
+			"title"	:
+			{
+				"kwKeyHtml"	: "t1"
+			},
+			"links"	:
+			{
+				"kwClass"	: "source-links",
+				"archTitle"	:
+				{
+					"kwKeyHtml"	: "t0"
+				},
+				"archLink"	:
+				{
+					"link"	:
+					{
+						"kwKeyHRef"	: "t2",
+						"kwKeyHtml"	: "t3"
+					}
+				}
+			}
+		}
+	},
+	"todoapp"	:
+	{
+		"kwID"		: "todoapp",
+		"kwClass"	: "todoapp",
+		"header"	:
+		{
+			"kwID"	: "header",
+			"title"	:
+			{
+				"kwKeyHtml"	: "t4"
+			},
+			"newToDo"	:
+			{
+				"kwID"				: "new-todo",
+				"kwKeyPlaceHolder"	: "t5",
+				"kwAutoFocus"		: true,
+				"kwTopicPub"		: "todolist/add"
+			}
+		},
+		"main"	:
+		{
+			"kwID"      : "main",
+			"toggleAll"	:
+			{
+				"kwID"			: "toggle-all",
+				"kwTopicPub"	: "todolist/modified",
+				"kwFor"			: "toggle-all"
+			},
+			"labelTA"	:
+			{
+				"kwID"		: "labelTA",
+				"kwKeyHtml"	: "t6",
+				"kwFor"		: "toggle-all"
+			},
+			"toDoList"	:
+			{
+				"kwClass"		: "todo-list",
+				"kwID"			: "todo-list",
+				"kwTopicSub"	: "todolist/modified",
+				"kwValue"		: "hello",
+                "filter"	:
+                {
+                    "kwTopicPub"	: "todolist/modified",
+                    "kwTopicSub"	: "filter/modified"
+                },
+				"items"         :
+				{
+					"item"			:
+					{
+						"kwField"		: "m_sKWID",
+						"kwTopicSub"	: "todolist/edit",
+						"view"	:
+						{
+							"btn"		:
+							{
+								"kwClass"		: "destroy",
+								"kwTopicPub"	: "todolist/modified"
+							},
+							"checkbox"		:
+							{
+								"kwField"		: "m_bIsCompleted",
+								"kwClass"		: "toggle",
+								"kwTopicPub"	: "todolist/modified"
+							},
+							"label"		:
+							{
+								"kwField"		: "m_sValue",
+								"kwTopicPub"	: "todolist/edit"
+							}
+						},
+						"edit"	:
+						{
+							"kwField"		: "m_sValue",
+							"kwClass"		: "edit",
+							"kwTopicPub"	: "todolist/modified"
+						}
+					}
+				}
+			}
+		},
+		"footer"	:
+		{
+			"kwID"			: "footer",
+			"kwIsVisible"	: false,
+			"kwTopicSub"	: "todolist/modified",
+			"btn"		:
+			{
+				"kwID"			: "clear-completed",
+				"keyCompleted"	: "t7",
+				"kwTopicPub"	: "todolist/modified",
+				"kwTopicSub"	: "todolist/modified"
+			},
+			"count"				:
+			{
+				"kwID"			: "todo-count",
+				"kwTopicSub"	: "todolist/modified",
+				"keySingle"		: "t8",
+				"keyMultiple"	: "t9",
+				"number"		:
+				{
+				}
+			},
+			"filters"	:
+			{
+				"kwID"	: "filters",
+				"active"	:
+				{
+					"link"	:
+					{
+						"kwHRef"		: "#/active",
+						"kwKeyHtml"		: "t10",
+						"kwTopicSub"	: "filter/modified",
+						"filter"		: "gnFilterActive"
+					}
+				},
+				"all"	:
+				{
+					"link"	:
+					{
+						"kwHRef"		: "#/",
+						"kwKeyHtml"		: "t11",
+						"kwTopicSub"	: "filter/modified",
+						"filter"		: "gnFilterNone"
+					}
+				},
+				"completed"	:
+				{
+					"link"	:
+					{
+						"kwHRef"		: "#/completed",
+						"kwKeyHtml"		: "t12",
+						"kwTopicSub"	: "filter/modified",
+						"filter"		: "gnFilterCompleted"
+					}
+				}
+			}
+		}
+	}
+}

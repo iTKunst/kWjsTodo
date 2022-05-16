@@ -1,0 +1,6 @@
+[submodule "js/libs/jQuery"]
+	path = js/libs/jQuery
+	url = git://github.com/pdooley/jQuery.git
+[submodule "js/libs/kW"]
+	path = js/libs/kW
+	url = git://github.com/pdooley/kWjs.git

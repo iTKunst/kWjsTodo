@@ -1,0 +1,11 @@
+In order to build:
+
+1. Install node.js
+
+2. Run node.js
+
+3. Go to AgPal3/src/main/webapp/js
+
+4. Type "node ../r.js -o app.build.js"
+
+5. copy /webapp-build/js/release/main.js to /webapp/js/release

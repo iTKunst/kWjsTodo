@@ -1,0 +1,12 @@
+{
+    "name": "kWjsToDo",
+    "description": "A To-Do sample appilcation for kWjs",
+    "version": "0.0.0",
+    "homepage": "https://github.com/pdooley/kWjsTodo",
+    "license": "MIT",
+    "private": true,
+    "dependencies": 
+    {
+      "kWjs": "1.0.5"
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC
+"-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+    
+    <head>
+        
+        <!-- version = 1.0 -->
+				
+        <meta charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+		
+        <title>kunstWerk * ToDo</title>
+        
+        <link rel="stylesheet" href="css/todo.css" media="screen" type="text/css" />
+         
+        <script data-main="js/debug/main" src="bower_components/requirejs/require.js"></script>
+        
+        <script>
+            requirejs.config
+            (
+                {
+                    baseUrl: 'js/debug',
+                    "paths":
+                    {
+                        "jquery"        :   "require-jquery",
+                    },
+                    "shim":
+                    {
+                       "jquery-cookie":
+                        {
+                            deps: ["jquery"]
+                        },
+                        "jquery-pubsub": 
+                        {
+                            deps: ["jquery"]
+                        }
+                    }
+                }
+            );
+        </script>
+    </head>
+
+    <body class="learn-bar">
+		
+    </body>
+
+</html>
